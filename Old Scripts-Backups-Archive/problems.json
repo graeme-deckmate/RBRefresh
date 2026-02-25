@@ -1,0 +1,4679 @@
+{
+  "meta": {
+    "filter": "PROBLEMS",
+    "search": "",
+    "generatedAt": "2026-02-04T00:51:09.545Z"
+  },
+  "rows": [
+    {
+      "id": "OGN-011/298",
+      "name": "Magma Wurm",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 8,
+      "trigger": "",
+      "keywords": [],
+      "text": "Other friendly units enter ready.",
+      "raw": "Other friendly units enter ready.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONTINUOUS_ENTER_READY"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-012/298",
+      "name": "Noxus Hopeful",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — I cost [2] less. (Get the effect if you've played another card this turn.)",
+      "raw": "[Legion] — I cost [2] less. (Get the effect if you've played another card this turn.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-016/298",
+      "name": "Dangerous Duo",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — When you play me, give a unit +2 [S] this turn. (Get the effect if you've played another card this turn.)",
+      "raw": "[Legion] — When you play me, give a unit +2 [S] this turn. (Get the effect if you've played another card this turn.)",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-020/298",
+      "name": "Scrapyard Champion",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)",
+      "raw": "[Legion] — When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)",
+      "primitives": [
+        "DISCARD_HAND_N",
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DISCARD_HAND_N",
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-021/298",
+      "name": "Sun Disc",
+      "type": "Gear",
+      "domain": "Fury",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[T]: [Legion] — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
+      "raw": "[T]: [Legion] — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-023/298",
+      "name": "Unlicensed Armory",
+      "type": "Gear",
+      "domain": "Fury",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [],
+      "text": "Discard 1, [T]: Choose a friendly unit. The next time it dies this turn, you may pay [C] to recall it exhausted instead. (Send it to base. This isn't a move.)",
+      "raw": "Discard 1, [T]: Choose a friendly unit. The next time it dies this turn, you may pay [C] to recall it exhausted instead. (Send it to base. This isn't a move.)",
+      "primitives": [
+        "DISCARD_HAND_N",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DISCARD_HAND_N",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-034/298",
+      "name": "Tryndamere, Barbarian",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 7,
+      "trigger": "When I conquer after an attack",
+      "keywords": [],
+      "text": "if you assigned 5 or more excess damage to enemy units, you score 1 point.",
+      "raw": "When I conquer after an attack, if you assigned 5 or more excess damage to enemy units, you score 1 point.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When I conquer after an attack",
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-038/298",
+      "name": "Kadregrin the Infernal",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 9,
+      "trigger": "When you play me",
+      "keywords": [
+        "Mighty"
+      ],
+      "text": "draw 1 for each of your [Mighty] units. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "When you play me, draw 1 for each of your [Mighty] units. (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-044/298",
+      "name": "Clockwork Keeper",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [],
+      "text": "As you play me, you may pay [C] as an additional cost. If you do, draw 1.",
+      "raw": "As you play me, you may pay [C] as an additional cost. If you do, draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-048/298",
+      "name": "Meditation",
+      "type": "Spell",
+      "domain": "Calm",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) As an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1.",
+      "raw": "[Reaction] (Play any time, even before spells and abilities resolve.)\nAs an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-053/298",
+      "name": "Stand United",
+      "type": "Spell",
+      "domain": "Calm",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Hidden",
+        "Action",
+        "Play"
+      ],
+      "text": "[Hidden] (Hide now for [A] to react with later for [0].) [Action] (Play on your turn or in showdowns.) Buff a friendly unit. Buffs give an additional +1 [S] to friendly units this turn. (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "raw": "[Hidden] (Hide now for [A] to react with later for [0].)\n[Action] (Play on your turn or in showdowns.)\nBuff a friendly unit. Buffs give an additional +1 [S] to friendly units this turn. (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-056/298",
+      "name": "Adaptatron",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 4,
+      "trigger": "When I conquer",
+      "keywords": [],
+      "text": "you may kill a gear. If you do, buff me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "raw": "When I conquer, you may kill a gear. If you do, buff me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-063/298",
+      "name": "Spirit's Refuge",
+      "type": "Gear",
+      "domain": "Calm",
+      "cost": 2,
+      "trigger": "When you play this",
+      "keywords": [
+        "Deflect"
+      ],
+      "text": "buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.) Friendly buffed units have [Deflect] if they didn't already. (Opponents must pay [A] to choose those units with a spell or ability.)",
+      "raw": "When you play this, buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)\nFriendly buffed units have [Deflect] if they didn't already. (Opponents must pay [A] to choose those units with a spell or ability.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-071/298",
+      "name": "Party Favors",
+      "type": "Spell",
+      "domain": "Calm",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [],
+      "text": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted.",
+      "raw": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted.",
+      "primitives": [
+        "DRAW_N",
+        "CHANNEL_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "CHANNEL_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-097/298",
+      "name": "Blastcone Fae",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "[Hidden] (Hide now for [A] to react with later for [0].) When you play me, give a unit -2 [S] this turn, to a minimum of 1 [S].",
+      "raw": "[Hidden] (Hide now for [A] to react with later for [0].)\nWhen you play me, give a unit -2 [S] this turn, to a minimum of 1 [S].",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-108/298",
+      "name": "Convergent Mutation",
+      "type": "Spell",
+      "domain": "Mind",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit. If its Might is less than another friendly unit's, its Might becomes the Might of that friendly unit this turn.",
+      "raw": "[Reaction] (Play any time, even before spells and abilities resolve.)\nChoose a friendly unit. If its Might is less than another friendly unit's, its Might becomes the Might of that friendly unit this turn.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-116/298",
+      "name": "Thousand-Tailed Watcher",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 7,
+      "trigger": "",
+      "keywords": [
+        "Accelerate"
+      ],
+      "text": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.) When you play me, give enemy units -3 [S] this turn, to a minimum of 1 [S].\"",
+      "raw": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.)\nWhen you play me, give enemy units -3 [S] this turn, to a minimum of 1 [S].\"",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [
+        "TURN_SCOPED_TRIGGER",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-124/298",
+      "name": "Arena Bar",
+      "type": "Gear",
+      "domain": "Body",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [],
+      "text": "[T]: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "[T]: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-136/298",
+      "name": "Pit Rookie",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 2,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "buff another friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "When you play me, buff another friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-139/298",
+      "name": "Cithria of Cloudfield",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 2,
+      "trigger": "When you play another unit",
+      "keywords": [],
+      "text": "buff me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "raw": "When you play another unit, buff me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-147/298",
+      "name": "Wildclaw Shaman",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 4,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "you may spend a buff to buff me and ready me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "raw": "When you play me, you may spend a buff to buff me and ready me. (If I don't have a buff, I get a +1 [S] buff.)",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-150/298",
+      "name": "Kraken Hunter",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Accelerate",
+        "Assault"
+      ],
+      "text": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.) [Assault] (+1 [S] while I'm an attacker.) As you play me, you may spend any number of buffs as an additional cost. Reduce my cost by [C] for each buff you spend.",
+      "raw": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.) \n[Assault] (+1 [S] while I'm an attacker.) \nAs you play me, you may spend any number of buffs as an additional cost. Reduce my cost by [C] for each buff you spend.",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-186/298",
+      "name": "Treasure Trove",
+      "type": "Gear",
+      "domain": "Chaos",
+      "cost": 2,
+      "trigger": "When this leaves the board",
+      "keywords": [],
+      "text": "draw 1 and channel 1 rune exhausted. [C], [T]: Kill this.",
+      "raw": "When this leaves the board, draw 1 and channel 1 rune exhausted.\n[C], [T]: Kill this.",
+      "primitives": [
+        "DRAW_N",
+        "CHANNEL_N",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "CHANNEL_N",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When this leaves the board"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-195/298",
+      "name": "Rhasa the Sunderer",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 10,
+      "trigger": "",
+      "keywords": [],
+      "text": "I cost [1] less for each card in your trash.",
+      "raw": "I cost [1] less for each card in your trash.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-197/298",
+      "name": "Teemo, Scout",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "[Hidden] (Hide now for [A] to react with later for [0].) When you play me, give me +3 [S] this turn.",
+      "raw": "[Hidden] (Hide now for [A] to react with later for [0].)\nWhen you play me, give me +3 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-200/298",
+      "name": "Twisted Fate, Gambler",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 4,
+      "trigger": "When I attack",
+      "keywords": [
+        "R",
+        "B",
+        "Y"
+      ],
+      "text": "reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain: * [R] — Deal 2 to an enemy unit here and 1 to all other enemy units here. * [B] — Draw 1. * [Y] — Stun an enemy unit.",
+      "raw": "When I attack, reveal the top rune of your rune deck, then recycle it. Do one of the following based on its domain:\n* [R] — Deal 2 to an enemy unit here and 1 to all other enemy units here.\n* [B] — Draw 1.\n* [Y] — Stun an enemy unit.",
+      "primitives": [
+        "DRAW_N",
+        "STUN_UNIT_SINGLE",
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "STUN_UNIT_SINGLE",
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "KEYWORD_UNSUPPORTED: R",
+        "KEYWORD_UNSUPPORTED: B",
+        "KEYWORD_UNSUPPORTED: Y"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "HERE",
+        "notes": [
+          "enemy-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-206/298",
+      "name": "Back to Back",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give two friendly units each +2 [S] this turn.",
+      "raw": "[Reaction] (Play any time, even before spells and abilities resolve.)\nGive two friendly units each +2 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-217/298",
+      "name": "Trifarian Gloryseeker",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — When you play me, buff me. (If I don't have a buff, I get a +1 [S] buff. Get the effect if you've played another card this turn.)",
+      "raw": "[Legion] — When you play me, buff me. (If I don't have a buff, I get a +1 [S] buff. Get the effect if you've played another card this turn.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-218/298",
+      "name": "Vanguard Captain",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — When you play me, play two 1 [S] Recruit unit tokens here. (Get the effect if you've played another card this turn.)",
+      "raw": "[Legion] — When you play me, play two 1 [S] Recruit unit tokens here. (Get the effect if you've played another card this turn.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "HERE",
+        "notes": [
+          "here"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-221/298",
+      "name": "Imperial Decree",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) When any unit takes damage this turn, kill it.",
+      "raw": "[Action] (Play on your turn or in showdowns.)\nWhen any unit takes damage this turn, kill it.",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_DAMAGE_HOOK"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-223/298",
+      "name": "Peak Guardian",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "buff me. Then, if I am at a battlefield, buff all other friendly units there. (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "raw": "When you play me, buff me. Then, if I am at a battlefield, buff all other friendly units there. (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "friendly-only",
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-225/298",
+      "name": "Solari Chief",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 5,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "choose an enemy unit. If it is stunned, kill it. Otherwise, stun it. (It doesn't deal combat damage this turn.)",
+      "raw": "When you play me, choose an enemy unit. If it is stunned, kill it. Otherwise, stun it. (It doesn't deal combat damage this turn.)",
+      "primitives": [
+        "STUN_UNIT_SINGLE",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "STUN_UNIT_SINGLE",
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-227/298",
+      "name": "Symbol of the Solari",
+      "type": "Gear",
+      "domain": "Order",
+      "cost": 1,
+      "trigger": "",
+      "keywords": [],
+      "text": "If a combat where you are the attacker ends in a tie, recall ALL units instead. (Send them to base. This isn't a move. Ties are calculated after combat damage is dealt.)",
+      "raw": "If a combat where you are the attacker ends in a tie, recall ALL units instead. (Send them to base. This isn't a move. Ties are calculated after combat damage is dealt.)",
+      "primitives": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": [
+          "global-units"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-228/298",
+      "name": "Vanguard Helm",
+      "type": "Gear",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "When a buffed friendly unit dies",
+      "keywords": [],
+      "text": "buff another friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "When a buffed friendly unit dies, buff another friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-231/298",
+      "name": "Commander Ledros",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Deflect",
+        "Ganking"
+      ],
+      "text": "As you play me, you may kill any number of friendly units as an additional cost by [C] for each killed this way. [Deflect] (Opponents must pay [A] to choose me with a spell or ability.) [Ganking] (I can move from battlefield to battlefield.)",
+      "raw": "As you play me, you may kill any number of friendly units as an additional cost by [C] for each killed this way.\n[Deflect] (Opponents must pay [A] to choose me with a spell or ability.)\n[Ganking] (I can move from battlefield to battlefield.)",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "friendly-only",
+          "explicit-select",
+          "battlefield-target"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-233/298",
+      "name": "Grand Strategem",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) Give friendly units +5 [S] this turn.",
+      "raw": "[Action] (Play on your turn or in showdowns.)\nGive friendly units +5 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-238/298",
+      "name": "Leona, Determined",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Shield"
+      ],
+      "text": "[Shield] (+1 [S] while I'm a defender.) When I attack, stun an enemy unit here. (It doesn't deal combat damage this turn.)",
+      "raw": "[Shield] (+1 [S] while I'm a defender.)\nWhen I attack, stun an enemy unit here. (It doesn't deal combat damage this turn.)",
+      "primitives": [
+        "STUN_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "STUN_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "HERE",
+        "notes": [
+          "enemy-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-240a/298",
+      "name": "Sett, Kingpin",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Tank"
+      ],
+      "text": "[Tank] (I must be assigned combat damage first.) I get +1 [S] for each buffed friendly unit at my battlefield.",
+      "raw": "[Tank] (I must be assigned combat damage first.)\nI get +1 [S] for each buffed friendly unit at my battlefield.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-253/298",
+      "name": "Darius, Hand of Noxus",
+      "type": "Legend",
+      "domain": "Fury, Order",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Legion",
+        "Add"
+      ],
+      "text": "[T]: [Reaction], [Legion] — add [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "raw": "[T]: [Reaction], [Legion] — [Add] [1]. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-254/298",
+      "name": "Noxian Guillotine",
+      "type": "Spell",
+      "domain": "Fury, Order",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Legion",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) Choose a unit. Kill it the next time it takes damage this turn. [Legion] — Kill it now instead. (Get the effect if you've played another card this turn.)",
+      "raw": "[Action] (Play on your turn or in showdowns.)\nChoose a unit. Kill it the next time it takes damage this turn.\n[Legion] — Kill it now instead. (Get the effect if you've played another card this turn.)",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_DAMAGE_HOOK"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-255/298",
+      "name": "Ahri, Nine-Tailed Fox",
+      "type": "Legend",
+      "domain": "Calm, Mind",
+      "cost": 0,
+      "trigger": "When an enemy unit attacks a battlefield you control",
+      "keywords": [],
+      "text": "give it -1 [S] this turn, to a minimum of 1 [S].",
+      "raw": "When an enemy unit attacks a battlefield you control, give it -1 [S] this turn, to a minimum of 1 [S].",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When an enemy unit attacks a battlefield you control"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-261/298",
+      "name": "Leona, Radiant Dawn",
+      "type": "Legend",
+      "domain": "Calm, Order",
+      "cost": 0,
+      "trigger": "When you stun one or more enemy units",
+      "keywords": [],
+      "text": "buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "When you stun one or more enemy units, buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-263/298",
+      "name": "Teemo, Swift Scout",
+      "type": "Legend",
+      "domain": "Mind, Chaos",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "You may pay [1] to hide a card with [Hidden] instead of [C]. [1], [T]: Put a Teemo unit you own into your hand from your Champion Zone or the board.",
+      "raw": "You may pay [1] to hide a card with [Hidden] instead of [C].\n[1], [T]: Put a Teemo unit you own into your hand from your Champion Zone or the board.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-266/298",
+      "name": "Siphon Power",
+      "type": "Spell",
+      "domain": "Mind, Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a battlefield. Give friendly units there +1 [S] this turn and enemy units there -1 [S] this turn, to a minimum of 1 [S].",
+      "raw": "[Reaction] (Play any time, even before spells and abilities resolve.)\nChoose a battlefield. Give friendly units there +1 [S] this turn and enemy units there -1 [S] this turn, to a minimum of 1 [S].",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "enemy-only",
+          "explicit-select",
+          "battlefield-target"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-270/298",
+      "name": "Showstopper",
+      "type": "Spell",
+      "domain": "Body, Order",
+      "cost": 1,
+      "trigger": "",
+      "keywords": [],
+      "text": "Buff a friendly unit in your base, then move it to a battlefield. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "Buff a friendly unit in your base, then move it to a battlefield. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-281/298",
+      "name": "Hallowed Tomb",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you hold here",
+      "keywords": [],
+      "text": "you may return your Chosen Champion from your trash to your Champion Zone if it is empty.",
+      "raw": "When you hold here, you may return your Chosen Champion from your trash to your Champion Zone if it is empty.",
+      "primitives": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-283/298",
+      "name": "Navori Fighting Pit",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you hold here",
+      "keywords": [],
+      "text": "buff a unit here. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "When you hold here, buff a unit here. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "HERE",
+        "notes": [
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-284/298",
+      "name": "Obelisk of Power",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "At the start of each player's first Beginning Phase",
+      "keywords": [],
+      "text": "that player channels 1 rune.",
+      "raw": "At the start of each player's first Beginning Phase, that player channels 1 rune.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: At the start of each player's first Beginning Phase"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-290/298",
+      "name": "The Arena's Greatest",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "At the start of each player's first Beginning Phase",
+      "keywords": [],
+      "text": "that player gains 1 point.",
+      "raw": "At the start of each player's first Beginning Phase, that player gains 1 point.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: At the start of each player's first Beginning Phase"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "OGN-304/298",
+      "name": "Lee Sin, Blind Monk",
+      "type": "Legend",
+      "domain": "Calm, Body",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [],
+      "text": "[1], [T]: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "raw": "[1], [T]: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 [S] buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGN-310/298",
+      "name": "Sett, The Boss",
+      "type": "Legend",
+      "domain": "Body, Order",
+      "cost": 0,
+      "trigger": "When a buffed unit you control would die",
+      "keywords": [],
+      "text": "you may pay [C] and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.) When you conquer, ready me.",
+      "raw": "When a buffed unit you control would die, you may pay [C] and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.)\nWhen you conquer, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When a buffed unit you control would die",
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGS-006/024",
+      "name": "Lux, Illuminated",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 6,
+      "trigger": "When you play a spell that costs [5] or more",
+      "keywords": [],
+      "text": "give me +3 [S] this turn.",
+      "raw": "When you play a spell that costs [5] or more, give me +3 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you play a spell that costs [5] or more"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGS-020/024",
+      "name": "Highlander",
+      "type": "Spell",
+      "domain": "Calm, Body",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a friendly unit. The next time it dies this turn, recall it exhausted instead. (Send it to base. This isn't a move.)",
+      "raw": "[Reaction] (Play any time, even before spells and abilities resolve.)\nChoose a friendly unit. The next time it dies this turn, recall it exhausted instead. (Send it to base. This isn't a move.)",
+      "primitives": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGS-021/024",
+      "name": "Lux, Lady of Luminosity",
+      "type": "Legend",
+      "domain": "Mind, Order",
+      "cost": 0,
+      "trigger": "When you play a spell that costs [5] or more",
+      "keywords": [],
+      "text": "draw 1.",
+      "raw": "When you play a spell that costs [5] or more, draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you play a spell that costs [5] or more"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "OGS-024/024",
+      "name": "Decisive Strike",
+      "type": "Spell",
+      "domain": "Body, Order",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) Give friendly units +2 [S] this turn.",
+      "raw": "[Action] (Play on your turn or in showdowns.)\nGive friendly units +2 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-001/221",
+      "name": "Against the Odds",
+      "type": "Spell",
+      "domain": "Fury",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Give a friendly unit at a battlefield +2 [S] this turn for each enemy unit there.",
+      "raw": "[Reaction]  (Play any time, even before spells and abilities resolve.) \nGive a friendly unit at a battlefield +2 [S] this turn for each enemy unit there.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "enemy-only",
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-002/221",
+      "name": "Armed Assailant",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Accelerate",
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.) [Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "raw": "[Accelerate]  (You may pay [1][C] as an additional cost to have me enter ready.) \n[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-008/221",
+      "name": "Sentinel Adept",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-012/221",
+      "name": "Battering Ram",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [],
+      "text": "I cost [1] less for each card you've played this turn, to a minimum of [1].",
+      "raw": "I cost [1] less for each card you've played this turn, to a minimum of [1].",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-013/221",
+      "name": "Blast Corps Cadet",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [],
+      "text": "You may pay [1][C] as an additional cost to play me. When you play me, if you paid the additional cost, deal 2 to a unit at a battlefield.",
+      "raw": "You may pay [1][C] as an additional cost to play me.\nWhen you play me, if you paid the additional cost, deal 2 to a unit at a battlefield.",
+      "primitives": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-017/221",
+      "name": "Sudden Storm",
+      "type": "Spell",
+      "domain": "Fury",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Hidden",
+        "Action",
+        "Play"
+      ],
+      "text": "[Hidden]** ** (Hide now for [A] to react with later for [0].) [Action] (Play on your turn or in showdowns.) Deal 2 to a unit at a battlefield. If it's attacking, deal 4 to it instead.",
+      "raw": "[Hidden]** ** (Hide now for [A] to react with later for [0].) \n[Action]  (Play on your turn or in showdowns.) \nDeal 2 to a unit at a battlefield. If it's attacking, deal 4 to it instead.",
+      "primitives": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "friendly-only",
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-018/221",
+      "name": "Void Hatchling",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [],
+      "text": "If you would reveal cards from a deck, look at the top card first. You may recycle it. Then reveal those cards.",
+      "raw": "If you would reveal cards from a deck, look at the top card first. You may recycle it. Then reveal those cards.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-020a/221",
+      "name": "Draven, Vanquisher",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 4,
+      "trigger": "When I win a combat",
+      "keywords": [],
+      "text": "play a Gold gear token exhausted. When I attack or defend, you may pay [C]. If you do, give me +2 [S] this turn.",
+      "raw": "When I win a combat, play a Gold gear token exhausted.\nWhen I attack or defend, you may pay [C]. If you do, give me +2 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When I win a combat",
+        "IF_YOU_DO_BRANCH",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-027/221",
+      "name": "Dunebreaker",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 7,
+      "trigger": "",
+      "keywords": [],
+      "text": "If you have two or fewer cards in your hand, I enter ready. When I hold, draw 2.",
+      "raw": "If you have two or fewer cards in your hand, I enter ready.\nWhen I hold, draw 2.",
+      "primitives": [
+        "DRAW_N",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-036/221",
+      "name": "Lonely Poro",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Deathknell"
+      ],
+      "text": "[Deathknell] — If I died alone, draw 1. (When I die, get the effect. I'm alone if there are no other friendly units here.)",
+      "raw": "[Deathknell] — If I died alone, draw 1.  (When I die, get the effect. I'm alone if there are no other friendly units here.)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "HERE",
+        "notes": [
+          "friendly-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-041/221",
+      "name": "Apprentice Smith",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 2,
+      "trigger": "When I move",
+      "keywords": [],
+      "text": "reveal the top card of your Main Deck. If it's a gear, draw it. Otherwise, recycle it.",
+      "raw": "When I move, reveal the top card of your Main Deck. If it's a gear, draw it. Otherwise, recycle it.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-047/221",
+      "name": "Simian Ancestor",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 5,
+      "trigger": "When you buff me",
+      "keywords": [],
+      "text": "ready me.",
+      "raw": "When you buff me, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you buff me"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-050/221",
+      "name": "Azir, Ascendant",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Action"
+      ],
+      "text": "[C]: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
+      "raw": "[C]: [Action] — Choose a unit you control. Move me to its location and it to my original location. If it's equipped, you may attach one of its Equipment to me. Use only once per turn.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": [
+          "explicit-select"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-055/221",
+      "name": "Needlessly Large Yordle",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 10,
+      "trigger": "",
+      "keywords": [
+        "Shield 5",
+        "Tank"
+      ],
+      "text": "[Shield 5] (+5 [S] while I'm a defender.) [Tank] (I must be assigned combat damage first.) I cost [2][C] less for each point you scored from holding this turn.",
+      "raw": "[Shield 5]  (+5 [S] while I'm a defender.) \n[Tank]  (I must be assigned combat damage first.) \nI cost [2][C] less for each point you scored from holding this turn.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-058/221",
+      "name": "Ornn, Blacksmith",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 5,
+      "trigger": "When you play me or when I hold",
+      "keywords": [],
+      "text": "look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.",
+      "raw": "When you play me or when I hold, look at the top 4 cards of your Main Deck. You may reveal a gear from among them and draw it. Then recycle the rest.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you play me or when I hold"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-063/221",
+      "name": "Chemtech Cask",
+      "type": "Gear",
+      "domain": "Mind",
+      "cost": 1,
+      "trigger": "When you play a spell on an opponent's turn",
+      "keywords": [],
+      "text": "you may exhaust me to play a Gold gear token exhausted.",
+      "raw": "When you play a spell on an opponent's turn, you may exhaust me to play a Gold gear token exhausted.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you play a spell on an opponent's turn"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-067/221",
+      "name": "Frostcoat Cub",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [],
+      "text": "You may pay [C] as an additional cost to play me. When you play me, if you paid the additional cost, give a unit -2 [S] this turn.",
+      "raw": "You may pay [C] as an additional cost to play me.\nWhen you play me, if you paid the additional cost, give a unit -2 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-071/221",
+      "name": "Breakneck Mech",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 8,
+      "trigger": "",
+      "keywords": [
+        "Deflect",
+        "Ganking"
+      ],
+      "text": "Your Mechs have [Deflect] and [Ganking]. (Opponents must pay [A] to choose us with a spell or ability. We can move from battlefield to battlefield.) I enter ready if you control another Mech.",
+      "raw": "Your Mechs have [Deflect] and [Ganking].  (Opponents must pay [A] to choose us with a spell or ability. We can move from battlefield to battlefield.) \nI enter ready if you control another Mech.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "friendly-only",
+          "explicit-select",
+          "battlefield-target"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-072/221",
+      "name": "Dropboarder",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 4,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "if you control two or more gear, ready me.",
+      "raw": "When you play me, if you control two or more gear, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-074/221",
+      "name": "Pickpocket",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 3,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "you may kill a gear with Energy cost no more than [1]. If you do, play a Gold gear token exhausted.",
+      "raw": "When you play me, you may kill a gear with Energy cost no more than [1]. If you do, play a Gold gear token exhausted.",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-075/221",
+      "name": "Prize of Progress",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 4,
+      "trigger": "When you use an activated ability of a gear",
+      "keywords": [],
+      "text": "give me +1 [S] this turn.",
+      "raw": "When you use an activated ability of a gear, give me +1 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you use an activated ability of a gear"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-076/221",
+      "name": "Production Surge",
+      "type": "Spell",
+      "domain": "Mind",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [],
+      "text": "This costs [2] less if you control a Mech. Play a 3 [S] Mech unit token to your base. Draw 1.",
+      "raw": "This costs [2] less if you control a Mech.\nPlay a 3 [S] Mech unit token to your base.\nDraw 1.",
+      "primitives": [
+        "DRAW_N",
+        "PLAY_TOKENS"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "PLAY_TOKENS"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-079/221",
+      "name": "Bard, Mercurial",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [],
+      "text": "You may exhaust your legend as an additional cost to play me. When you play me, if you paid the additional cost, move any number of your units to an open battlefield.",
+      "raw": "You may exhaust your legend as an additional cost to play me.\nWhen you play me, if you paid the additional cost, move any number of your units to an open battlefield.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-081/221",
+      "name": "Card Sharp",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 3,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "you and each opponent may play a Gold gear token exhausted. For each opponent who did, you play a Gold gear token exhausted.",
+      "raw": "When you play me, you and each opponent may play a Gold gear token exhausted. For each opponent who did, you play a Gold gear token exhausted.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-084/221",
+      "name": "Jayce, Man of Progress",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 4,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "you may kill a friendly gear. If you do, you may play a gear with Energy cost no more than [7] from hand this turn, ignoring its Energy cost. (You must still pay its Power cost.)",
+      "raw": "When you play me, you may kill a friendly gear. If you do, you may play a gear with Energy cost no more than [7] from hand this turn, ignoring its Energy cost.  (You must still pay its Power cost.)",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-085/221",
+      "name": "Ornn, Forge God",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Deflect 2",
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Deflect 2] (Opponents must pay [A][A] to choose me with a spell or ability.) [Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) I have +1 [S] for each friendly gear.",
+      "raw": "[Deflect 2]  (Opponents must pay [A][A] to choose me with a spell or ability.) \n[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) \nI have +1 [S] for each friendly gear.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-090/221",
+      "name": "The Zero Drive",
+      "type": "Gear",
+      "domain": "Mind",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Equip"
+      ],
+      "text": "[Equip] [1][C] ([1][C]: Attach this to a unit you control.) [3][C], Banish this: Play all units banished with this, ignoring their costs. (Use only if unattached.)",
+      "raw": "[Equip] [1][C]  ([1][C]: Attach this to a unit you control.) \n[3][C], Banish this: Play all units banished with this, ignoring their costs.  (Use only if unattached.)",
+      "primitives": [
+        "BANISH_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "BANISH_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": [
+          "global-units"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-091/221",
+      "name": "Buhru Captain",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 3,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "you may draw 1 or buff me. (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "raw": "When you play me, you may draw 1 or buff me.  (To buff a unit, give it a +1 [S] buff if it doesn't already have one.)",
+      "primitives": [
+        "DRAW_N",
+        "GRANT_KEYWORD_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "GRANT_KEYWORD_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-092/221",
+      "name": "Combat Chef",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-094/221",
+      "name": "Direwing",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 7,
+      "trigger": "",
+      "keywords": [],
+      "text": "I enter ready if you control another Dragon.",
+      "raw": "I enter ready if you control another Dragon.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-098/221",
+      "name": "Sea Monkey",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [],
+      "text": "You may pay [1] as an additional cost to play me. When you play me, if you paid the additional cost, buff me. (Give me a +1 [S] buff if I don't already have one.)",
+      "raw": "You may pay [1] as an additional cost to play me.\nWhen you play me, if you paid the additional cost, buff me.  (Give me a +1 [S] buff if I don't already have one.)",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-099/221",
+      "name": "Veteran Poro",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-100/221",
+      "name": "Yordle Explorer",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 4,
+      "trigger": "When you play a card with Power cost [A][A] or more",
+      "keywords": [],
+      "text": "draw 1.",
+      "raw": "When you play a card with Power cost [A][A] or more, draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you play a card with Power cost [A][A] or more"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-101/221",
+      "name": "Fae Dragon",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 7,
+      "trigger": "When you play me",
+      "keywords": [],
+      "text": "buff up to four friendly units. (Give each a +1 [S] buff if it doesn't have one.) When you spend a buff, play a Gold gear token exhausted.",
+      "raw": "When you play me, buff up to four friendly units.  (Give each a +1 [S] buff if it doesn't have one.) \nWhen you spend a buff, play a Gold gear token exhausted.",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-103/221",
+      "name": "Jaull-Fish",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 7,
+      "trigger": "",
+      "keywords": [
+        "Accelerate",
+        "Mighty"
+      ],
+      "text": "[Accelerate]** ** (You may pay [1][C] as an additional cost to have me enter ready.) I cost [2] less for each of your [Mighty] units. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "[Accelerate]**   ** (You may pay [1][C] as an additional cost to have me enter ready.) \nI cost [2] less for each of your [Mighty] units.  (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-106/221",
+      "name": "Show of Strength",
+      "type": "Spell",
+      "domain": "Body",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Mighty",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Draw 1 for each of your [Mighty] units. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "[Reaction]  (Play any time, even before spells and abilities resolve.) \nDraw 1 for each of your [Mighty] units.  (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-109/221",
+      "name": "Akshan, Mischievous",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster"
+      ],
+      "text": "[Weaponmaster] You may pay [C][C] as an additional cost to play me. When you play me, if you paid the additional cost, move an enemy gear to your base. You control it until I leave the board. If it's an Equipment, attach it to me.",
+      "raw": "[Weaponmaster]\nYou may pay [C][C] as an additional cost to play me.\nWhen you play me, if you paid the additional cost, move an enemy gear to your base. You control it until I leave the board. If it's an Equipment, attach it to me.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-110a/221",
+      "name": "Fiora, Peerless",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 3,
+      "trigger": "When I attack or defend one on one",
+      "keywords": [],
+      "text": "double my Might this combat.",
+      "raw": "When I attack or defend one on one, double my Might this combat.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When I attack or defend one on one"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-112/221",
+      "name": "Kato the Arm",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Deflect"
+      ],
+      "text": "[Deflect] (Opponents must pay [A] to choose me with a spell or ability.) When I move to a battlefield, give a friendly unit my keywords and +[S] equal to my Might this turn.",
+      "raw": "[Deflect]  (Opponents must pay [A] to choose me with a spell or ability.) \nWhen I move to a battlefield, give a friendly unit my keywords and +[S] equal to my Might this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "friendly-only",
+          "explicit-select",
+          "battlefield-target"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-113a/221",
+      "name": "Lucian, Merciless",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) The first time I conquer each turn, ready me.",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) \nThe first time I conquer each turn, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-116/221",
+      "name": "Yone, Blademaster",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) When I conquer an open battlefield, deal damage equal to my Might to an enemy unit in a base.",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) \nWhen I conquer an open battlefield, deal damage equal to my Might to an enemy unit in a base.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-119a/221",
+      "name": "Jax, Unrelenting",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) When you attach an Equipment to me, you may pay [1] to draw 1.",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.) \nWhen you attach an Equipment to me, you may pay [1] to draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-120/221",
+      "name": "Sivir, Ambitious",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Deflect 2"
+      ],
+      "text": "[Deflect 2] (Opponents must pay [A][A] to choose me with a spell or Ability.) When I conquer after an attack, if you assigned 5 or more excess damage to enemy units, you may deal that much to an enemy unit.",
+      "raw": "[Deflect 2]  (Opponents must pay [A][A] to choose me with a spell or Ability.) \nWhen I conquer after an attack, if you assigned 5 or more excess damage to enemy units, you may deal that much to an enemy unit.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only",
+          "explicit-select"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-126/221",
+      "name": "Loyal Pup",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 3,
+      "trigger": "When you defend at a battlefield",
+      "keywords": [],
+      "text": "you may move me there.",
+      "raw": "When you defend at a battlefield, you may move me there.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you defend at a battlefield"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-127/221",
+      "name": "Master Bingwen",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "raw": "[Weaponmaster]  (When you play me, you may [Equip] one of your Equipment to me for [A] less, even if it's already attached.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-131/221",
+      "name": "Ancient Warmonger",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Accelerate",
+        "Assault"
+      ],
+      "text": "[Accelerate] ( Y ou may pay [1][C] as an additional cost to have me enter ready.) I have [Assault] equal to the number of enemy units here. (+1 [S] while I'm an attacker for each instance of Assault.)",
+      "raw": "[Accelerate]  ( Y ou may pay [1][C] as an additional cost to have me enter ready.) \nI have [Assault] equal to the number of enemy units here.  (+1 [S] while I'm an attacker for each instance of Assault.)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "HERE",
+        "notes": [
+          "enemy-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-142/221",
+      "name": "Jae Medarda",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 5,
+      "trigger": "When you choose me with a spell",
+      "keywords": [],
+      "text": "draw 1.",
+      "raw": "When you choose me with a spell, draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you choose me with a spell"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-143a/221",
+      "name": "Sivir, Mercenary",
+      "type": "Unit",
+      "domain": "Chaos",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Accelerate",
+        "Ganking"
+      ],
+      "text": "[Accelerate] (You may pay [1][C] as an additional cost to have me enter ready.) If you've spent at least [A][A] this turn, I have +2 [S] and [Ganking]. (I can move from battlefield to battlefield.)",
+      "raw": "[Accelerate]  (You may pay [1][C] as an additional cost to have me enter ready.) \nIf you've spent at least [A][A] this turn, I have +2 [S] and [Ganking].  (I can move from battlefield to battlefield.)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-144/221",
+      "name": "Spirit Wheel",
+      "type": "Gear",
+      "domain": "Chaos",
+      "cost": 2,
+      "trigger": "When you choose a friendly unit",
+      "keywords": [],
+      "text": "you may pay [1] and exhaust this to draw 1.",
+      "raw": "When you choose a friendly unit, you may pay [1] and exhaust this to draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you choose a friendly unit"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-151/221",
+      "name": "Bonds of Strength",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Repeat",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) [Repeat] [2] (You may pay the additional cost to repeat this spell's effect.) Give two friendly units each +1 [S] this turn.",
+      "raw": "[Reaction]  (Play any time, even before spells and abilities resolve.) \n[Repeat] [2]  (You may pay the additional cost to repeat this spell's effect.) \nGive two friendly units each +1 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-160/221",
+      "name": "Zaun Punk",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [],
+      "text": "You may kill a friendly gear as an additional cost to play me. When you play me, if you paid the additional cost, kill a gear.",
+      "raw": "You may kill a friendly gear as an additional cost to play me.\nWhen you play me, if you paid the additional cost, kill a gear.",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "ADDITIONAL_COST"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-162/221",
+      "name": "Blood Money",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) Kill a unit at a battlefield with 2 [S] or less. If it was an enemy unit, play a Gold gear token exhausted. If it was a friendly unit, play two Gold gear tokens exhausted.",
+      "raw": "[Action]  (Play on your turn or in showdowns.) \nKill a unit at a battlefield with 2 [S] or less. If it was an enemy unit, play a Gold gear token exhausted. If it was a friendly unit, play two Gold gear tokens exhausted.",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "enemy-only",
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-166/221",
+      "name": "Rally the Troops",
+      "type": "Spell",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) When a friendly unit is played this turn, buff it. (If it doesn't have a buff, it gets a +1 [S] buff.) Draw 1.",
+      "raw": "[Action]  (Play on your turn or in showdowns.) \nWhen a friendly unit is played this turn, buff it.  (If it doesn't have a buff, it gets a +1 [S] buff.) \nDraw 1.",
+      "primitives": [
+        "DRAW_N",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "DRAW_N",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-167/221",
+      "name": "Unsung Hero",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Deathknell",
+        "Mighty"
+      ],
+      "text": "[Deathknell] — If I was [Mighty], draw 2. ( When I die, get the effect. I'm Mighty while I have 5+ [S].)",
+      "raw": "[Deathknell] — If I was [Mighty], draw 2. ( When I die, get the effect. I'm Mighty while I have 5+ [S].)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-169/221",
+      "name": "Altar of Memories",
+      "type": "Gear",
+      "domain": "Order",
+      "cost": 2,
+      "trigger": "When a friendly unit dies",
+      "keywords": [],
+      "text": "you may exhaust me to draw 1, then put a card from your hand on the top or bottom of your Main Deck.",
+      "raw": "When a friendly unit dies, you may exhaust me to draw 1, then put a card from your hand on the top or bottom of your Main Deck.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When a friendly unit dies"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-170a/221",
+      "name": "Rek'Sai, Swarm Queen",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 5,
+      "trigger": "When I attack",
+      "keywords": [],
+      "text": "you may reveal the top 2 cards of your Main Deck. You may play one. Then recycle the rest. If the played card is a unit, you may play it here.",
+      "raw": "When I attack, you may reveal the top 2 cards of your Main Deck. You may play one. Then recycle the rest. If the played card is a unit, you may play it here.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "HERE",
+        "notes": [
+          "friendly-only",
+          "here"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-175/221",
+      "name": "Undertitan",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "When you play me",
+      "keywords": [
+        "Add"
+      ],
+      "text": "give your other units +2 [S] this turn. As I'm revealed from your deck, add [2].",
+      "raw": "When you play me, give your other units +2 [S] this turn.\nAs I'm revealed from your deck, [Add] [2].",
+      "primitives": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "primitivesSupported": [],
+      "primitivesMissing": [
+        "GRANT_KEYWORD_MULTI"
+      ],
+      "flags": [],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-176/221",
+      "name": "Xin Zhao, Vigilant",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 3,
+      "trigger": "",
+      "keywords": [
+        "Tank"
+      ],
+      "text": "[Tank] (I must be assigned combat damage first.) I enter ready if you have two or more other units in your base.",
+      "raw": "[Tank]  (I must be assigned combat damage first.) \nI enter ready if you have two or more other units in your base.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-180a/221",
+      "name": "Fiora, Worthy",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 3,
+      "trigger": "When a unit you control becomes [Mighty]",
+      "keywords": [
+        "Mighty"
+      ],
+      "text": "you may pay [C] to ready it. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "When a unit you control becomes [Mighty], you may pay [C] to ready it.  (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When a unit you control becomes [Mighty]"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-184/221",
+      "name": "Relentless Pursuit",
+      "type": "Spell",
+      "domain": "Fury, Body",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Action",
+        "Play"
+      ],
+      "text": "[Action] (Play on your turn or in showdowns.) Move a friendly unit. You may attach an Equipment with the same controller to it. This turn, that unit has \"When I conquer, you may move me to my base.\"",
+      "raw": "[Action]  (Play on your turn or in showdowns.) \nMove a friendly unit. You may attach an Equipment with the same controller to it. This turn, that unit has \"When I conquer, you may move me to my base.\"",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-185/221",
+      "name": "Draven, Glorious Executioner",
+      "type": "Legend",
+      "domain": "Fury, Chaos",
+      "cost": 0,
+      "trigger": "When you win a combat",
+      "keywords": [],
+      "text": "draw 1. (You win if only your units remain after combat.)",
+      "raw": "When you win a combat, draw 1.  (You win if only your units remain after combat.)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you win a combat",
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-186/221",
+      "name": "Spinning Axe",
+      "type": "Gear",
+      "domain": "Fury, Chaos",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Quick-Draw",
+        "Reaction",
+        "Equip",
+        "Temporary"
+      ],
+      "text": "[Quick-Draw] (This has [Reaction]. When you play it, attach it to a unit you control.) [Equip] [C] ([C]: Attach this to a unit you control.) [Temporary] (If this is unattached, kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "raw": "[Quick-Draw]  (This has [Reaction]. When you play it, attach it to a unit you control.) \n[Equip] [C]  ([C]: Attach this to a unit you control.) \n[Temporary]  (If this is unattached, kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "primitives": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "KILL_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-190/221",
+      "name": "Forgefire Cape",
+      "type": "Gear",
+      "domain": "Calm, Mind",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Unique",
+        "Equip"
+      ],
+      "text": "[Unique]** ** (Your deck can have only 1 card with this name.) [Equip] [C] ([C]: Attach this to a unit you control.)",
+      "raw": "[Unique]** ** (Your deck can have only 1 card with this name.) \n[Equip] [C]  ([C]: Attach this to a unit you control.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "KEYWORD_UNSUPPORTED: Unique"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-191/221",
+      "name": "Rabadon's Deathcrown",
+      "type": "Gear",
+      "domain": "Calm, Mind",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Unique",
+        "Equip"
+      ],
+      "text": "[Unique]** ** (Your deck can have only 1 card with this name.) [Equip] [C] ([C]: Attach this to a unit you control.)",
+      "raw": "[Unique]** ** (Your deck can have only 1 card with this name.)  [Equip] [C]  ([C]: Attach this to a unit you control.)",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "KEYWORD_UNSUPPORTED: Unique"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-192/221",
+      "name": "Shurelya's Requiem",
+      "type": "Gear",
+      "domain": "Calm, Mind",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Unique",
+        "Equip"
+      ],
+      "text": "[Unique]** ** (Your deck can have only 1 card with this name.) [Equip] [C] ([C]: Attach this to a unit you control.) When you play this, ready your units.",
+      "raw": "[Unique]** ** (Your deck can have only 1 card with this name.)  [Equip] [C]  ([C]: Attach this to a unit you control.)  When you play this, ready your units.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "KEYWORD_UNSUPPORTED: Unique"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-194/221",
+      "name": "Counter Strike",
+      "type": "Spell",
+      "domain": "Calm, Body",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Play"
+      ],
+      "text": "[Reaction] (Play any time, even before spells and abilities resolve.) Choose a unit. The next time that unit would be dealt damage this turn, prevent it. Draw 1.",
+      "raw": "[Reaction]  (Play any time, even before spells and abilities resolve.) \nChoose a unit. The next time that unit would be dealt damage this turn, prevent it. Draw 1.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": [
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-195/221",
+      "name": "Irelia, Blade Dancer",
+      "type": "Legend",
+      "domain": "Calm, Chaos",
+      "cost": 0,
+      "trigger": "When you choose a friendly unit",
+      "keywords": [],
+      "text": "you may exhaust me and pay [A] to ready it. When you conquer, you may pay [1] to ready me.",
+      "raw": "When you choose a friendly unit, you may exhaust me and pay [A] to ready it.\nWhen you conquer, you may pay [1] to ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you choose a friendly unit"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-197/221",
+      "name": "Azir, Emperor of the Sands",
+      "type": "Legend",
+      "domain": "Calm, Order",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Weaponmaster",
+        "Equip"
+      ],
+      "text": "Sand Soldiers you play have [Weaponmaster]. (When they're played, you may [Equip] one of your Equipment to them for [A] less.) [1], [T]: Play a 2 [S] Sand Soldier unit token to your base. Use only if you've played an Equipment this turn.",
+      "raw": "Sand Soldiers you play have [Weaponmaster].  (When they're played, you may [Equip] one of your Equipment to them for [A] less.) \n[1], [T]: Play a 2 [S] Sand Soldier unit token to your base. Use only if you've played an Equipment this turn.",
+      "primitives": [
+        "PLAY_TOKENS"
+      ],
+      "primitivesSupported": [
+        "PLAY_TOKENS"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-198/221",
+      "name": "Arise!",
+      "type": "Spell",
+      "domain": "Calm, Order",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [],
+      "text": "Play a 2 [S] Sand Soldier unit token for each Equipment you control. Then ready two of them.",
+      "raw": "Play a 2 [S] Sand Soldier unit token for each Equipment you control. Then ready two of them.",
+      "primitives": [
+        "PLAY_TOKENS",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "PLAY_TOKENS",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-201/221",
+      "name": "Renata Glasc, Chem-Baroness",
+      "type": "Legend",
+      "domain": "Mind, Order",
+      "cost": 0,
+      "trigger": "When you or an ally hold",
+      "keywords": [
+        "ADD"
+      ],
+      "text": "you may exhaust me to play a Gold gear token exhausted. While your score is within 3 points of the Victory Score, your Gold add an additional [1].",
+      "raw": "When you or an ally hold, you may exhaust me to play a Gold gear token exhausted.\nWhile your score is within 3 points of the Victory Score, your Gold [ADD] an additional [1].",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you or an ally hold",
+        "KEYWORD_UNSUPPORTED: ADD"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-202/221",
+      "name": "Hostile Takeover",
+      "type": "Spell",
+      "domain": "Mind, Order",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "[Hidden] (Hide now for [A] to react with later for [0].) Take control of an enemy unit at a battlefield. Ready it. (Start a combat if other enemies are there. Otherwise, conquer.) Lose control of that unit and recall it at end of turn. (Send it to base. This isn't a move.)",
+      "raw": "[Hidden]  (Hide now for [A] to react with later for [0].) \nTake control of an enemy unit at a battlefield. Ready it.  (Start a combat if other enemies are there. Otherwise, conquer.) \nLose control of that unit and recall it at end of turn.  (Send it to base. This isn't a move.)",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "BATTLEFIELD",
+        "notes": [
+          "enemy-only",
+          "at-battlefield"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-203/221",
+      "name": "Sivir, Battle Mistress",
+      "type": "Legend",
+      "domain": "Body, Chaos",
+      "cost": 0,
+      "trigger": "When you recycle a rune",
+      "keywords": [],
+      "text": "you may exhaust me to play a Gold gear token exhausted. When one or more enemy units die, ready me.",
+      "raw": "When you recycle a rune, you may exhaust me to play a Gold gear token exhausted.\nWhen one or more enemy units die, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you recycle a rune"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-205/221",
+      "name": "Fiora, Grand Duelist",
+      "type": "Legend",
+      "domain": "Body, Order",
+      "cost": 0,
+      "trigger": "When one of your units becomes [Mighty]",
+      "keywords": [
+        "Mighty"
+      ],
+      "text": "you may exhaust me to channel 1 rune exhausted. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "When one of your units becomes [Mighty], you may exhaust me to channel 1 rune exhausted.  (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "CHANNEL_N"
+      ],
+      "primitivesSupported": [
+        "CHANNEL_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When one of your units becomes [Mighty]"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-207/221",
+      "name": "Emperor's Dais",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you conquer here",
+      "keywords": [],
+      "text": "you may pay [1] and return a unit you control here to its owner's hand. If you do, play a 2 [S] Sand Soldier unit token here.",
+      "raw": "When you conquer here, you may pay [1] and return a unit you control here to its owner's hand. If you do, play a 2 [S] Sand Soldier unit token here.",
+      "primitives": [
+        "PLAY_TOKENS",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "PLAY_TOKENS",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "IF_YOU_DO_BRANCH"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "HERE",
+        "notes": [
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-215/221",
+      "name": "Ravenbloom Conservatory",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you defend here",
+      "keywords": [],
+      "text": "reveal the top card of your Main Deck. If it's a spell, put it in your hand. Otherwise, recycle it.",
+      "raw": "When you defend here, reveal the top card of your Main Deck. If it's a spell, put it in your hand. Otherwise, recycle it.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "SFD-217/221",
+      "name": "Seat of Power",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you conquer here",
+      "keywords": [],
+      "text": "draw 1 for each other battlefield you or allies control.",
+      "raw": "When you conquer here, draw 1 for each other battlefield you or allies control.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-218/221",
+      "name": "Sunken Temple",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you conquer here with one or more [Mighty] units",
+      "keywords": [
+        "Mighty"
+      ],
+      "text": "you may pay [1] to draw 1. (A unit is Mighty while it has 5+ [S].)",
+      "raw": "When you conquer here with one or more [Mighty] units, you may pay [1] to draw 1.  (A unit is Mighty while it has 5+ [S].)",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you conquer here with one or more [Mighty] units"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-221/221",
+      "name": "Veiled Temple",
+      "type": "Battlefield",
+      "domain": "Colorless",
+      "cost": 0,
+      "trigger": "When you conquer here",
+      "keywords": [],
+      "text": "you may ready a friendly gear. If it's an Equipment, you may detach it.",
+      "raw": "When you conquer here, you may ready a friendly gear. If it's an Equipment, you may detach it.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-224*/221",
+      "name": "Aphelios, Exalted",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 4,
+      "trigger": "When you attach an Equipment to me",
+      "keywords": [],
+      "text": "choose one that hasn't been chosen this turn — - Ready 2 runes. - Channel 1 rune exhausted. - Buff a friendly unit.",
+      "raw": "When you attach an Equipment to me, choose one that hasn't been chosen this turn —\n- Ready 2 runes.\n- Channel 1 rune exhausted.\n- Buff a friendly unit.",
+      "primitives": [
+        "CHANNEL_N",
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "CHANNEL_N",
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When you attach an Equipment to me"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only",
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-225/221",
+      "name": "Irelia, Fervent",
+      "type": "Unit",
+      "domain": "Calm",
+      "cost": 5,
+      "trigger": "",
+      "keywords": [
+        "Deflect"
+      ],
+      "text": "[Deflect] (Opponents must pay [A] to choose me with a spell or ability.) When you choose or ready me, give me +1 [S] this turn.",
+      "raw": "[Deflect]  (Opponents must pay [A] to choose me with a spell or ability.) \nWhen you choose or ready me, give me +1 [S] this turn.",
+      "primitives": [
+        "GRANT_KEYWORD_SINGLE",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "GRANT_KEYWORD_SINGLE",
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": [
+          "explicit-select"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-239/221",
+      "name": "Soraka, Wanderer",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [],
+      "text": "I must be assigned combat damage last. If another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it. (Send it to base. This isn't a move.)",
+      "raw": "I must be assigned combat damage last.\nIf another unit you control here would die, if it has less Might than me, instead heal it, exhaust it, and recall it.  (Send it to base. This isn't a move.)",
+      "primitives": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "ANY",
+        "location": "HERE",
+        "notes": [
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "SFD-248/221",
+      "name": "Ezreal, Prodigal Explorer",
+      "type": "Legend",
+      "domain": "Mind, Chaos",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Reaction"
+      ],
+      "text": "[T]: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
+      "raw": "[T]: [Reaction] — Draw 1. Use only if you've chosen enemy units and/or gear twice this turn with spells or unit abilities.",
+      "primitives": [
+        "DRAW_N"
+      ],
+      "primitivesSupported": [
+        "DRAW_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "ANY",
+        "notes": [
+          "enemy-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-035",
+      "name": "Vayne, Hunter",
+      "type": "Unit",
+      "domain": "Fury",
+      "cost": 4,
+      "trigger": "",
+      "keywords": [
+        "Assault 3"
+      ],
+      "text": "[Assault 3] (+3 might while I'm an attacker.) If an opponent controls a battlefield, I enter ready. When I conquer, you may pay 1 energy to return me to my owner's hand.",
+      "raw": "[Assault 3]_ (+3 might while I'm an attacker.)_ If an opponent controls a battlefield, I enter ready. When I conquer, you may pay 1 energy to return me to my owner's hand.",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-121",
+      "name": "Teemo, Strategist",
+      "type": "Unit",
+      "domain": "Mind",
+      "cost": 2,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.) When I defend or I'm played from [Hidden], reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with [Hidden], then recycle them.",
+      "raw": "[Hidden] (Hide now for 1 rune of any type to react with later for 0 energy.)\nWhen I defend or I'm played from [Hidden], reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with [Hidden], then recycle them.",
+      "primitives": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "DAMAGE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "SCALING_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ENEMY",
+        "location": "HERE",
+        "notes": [
+          "enemy-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-164",
+      "name": "Sett, Brawler",
+      "type": "Unit",
+      "domain": "Body",
+      "cost": 5,
+      "trigger": "When I'm played and when I conquer",
+      "keywords": [],
+      "text": "buff me. (If I don't have a buff, I get a +1 might buff.) Spend my buff: Give me +4 might this turn.",
+      "raw": "When I'm played and when I conquer, buff me. (If I don't have a buff, I get a +1 might buff.) Spend my buff: Give me +4 might this turn.",
+      "primitives": [
+        "BUFF_PLUS1_PERM",
+        "MIGHT_THIS_TURN_SINGLE"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM",
+        "MIGHT_THIS_TURN_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When I'm played and when I conquer",
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-235",
+      "name": "Karma, Channeler",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Vision"
+      ],
+      "text": "[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.) When you recycle one or more cards, buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff. Runes aren't cards.)",
+      "raw": "[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.)\nWhen you recycle one or more cards, buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff. Runes aren't cards.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-243",
+      "name": "Darius, Executioner",
+      "type": "Unit",
+      "domain": "Order",
+      "cost": 6,
+      "trigger": "",
+      "keywords": [
+        "Legion"
+      ],
+      "text": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn) Other friendly units have +1 might here.",
+      "raw": "[Legion] — When you play me, ready me. (Get the effect if you've played another card this turn) Other friendly units have +1 might here.",
+      "primitives": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL",
+        "TURN_SCOPED_TRIGGER"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "HERE",
+        "notes": [
+          "friendly-only",
+          "here"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-253",
+      "name": "Hand of Noxus",
+      "type": "Legend",
+      "domain": "Fury, Order",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Reaction",
+        "Legion",
+        "Add"
+      ],
+      "text": "exhaust: [Reaction], [Legion] — add 1 energy. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "raw": "exhaust: [Reaction], [Legion] — [Add] 1 energy. (Abilities that add resources can't be reacted to. Get the effect if you've played a card this turn.)",
+      "primitives": [
+        "ADD_ENERGY_N"
+      ],
+      "primitivesSupported": [
+        "ADD_ENERGY_N"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-255",
+      "name": "Nine-Tailed Fox",
+      "type": "Legend",
+      "domain": "Calm, Mind",
+      "cost": 0,
+      "trigger": "When an enemy unit attacks a battlefield you control",
+      "keywords": [],
+      "text": "give it -1 might this turn, to a minimum of 1 might.",
+      "raw": "When an enemy unit attacks a battlefield you control, give it -1 might this turn, to a minimum of 1 might.",
+      "primitives": [
+        "MIGHT_THIS_TURN_SINGLE"
+      ],
+      "primitivesSupported": [
+        "MIGHT_THIS_TURN_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When an enemy unit attacks a battlefield you control"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-257",
+      "name": "Blind Monk",
+      "type": "Legend",
+      "domain": "Calm, Body",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [],
+      "text": "1 energy, exhaust: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
+      "raw": "1 energy, exhaust: Buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-261",
+      "name": "Radiant Dawn",
+      "type": "Legend",
+      "domain": "Calm, Order",
+      "cost": 0,
+      "trigger": "When you stun one or more enemy units",
+      "keywords": [],
+      "text": "buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
+      "raw": "When you stun one or more enemy units, buff a friendly unit. (If it doesn't have a buff, it gets a +1 might buff.)",
+      "primitives": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesSupported": [
+        "BUFF_PLUS1_PERM"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "CONDITIONAL_GENERAL"
+      ],
+      "targetProfile": {
+        "needsTargets": true,
+        "count": 1,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "PARTIAL"
+    },
+    {
+      "id": "ogn-263",
+      "name": "Swift Scout",
+      "type": "Legend",
+      "domain": "Mind, Chaos",
+      "cost": 0,
+      "trigger": "",
+      "keywords": [
+        "Hidden"
+      ],
+      "text": "You may pay 1 energy to hide a card with [Hidden] instead of 1 rune of any type. 1 energy, exhaust: Put a Teemo unit you own into your hand from your Champion Zone or the board.",
+      "raw": "You may pay 1 energy to hide a card with [Hidden] instead of 1 rune of any type. 1 energy, exhaust: Put a Teemo unit you own into your hand from your Champion Zone or the board.",
+      "primitives": [],
+      "primitivesSupported": [],
+      "primitivesMissing": [],
+      "flags": [
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "FRIENDLY",
+        "location": "ANY",
+        "notes": [
+          "friendly-only"
+        ]
+      },
+      "status": "UNSUPPORTED"
+    },
+    {
+      "id": "ogn-269",
+      "name": "The Boss",
+      "type": "Legend",
+      "domain": "Body, Order",
+      "cost": 0,
+      "trigger": "When a buffed unit you control would die",
+      "keywords": [],
+      "text": "you may pay 1 rune of any type and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.) When you conquer, ready me.",
+      "raw": "When a buffed unit you control would die, you may pay 1 rune of any type and exhaust me to spend its buff and recall it exhausted instead. (Send it to base. This isn't a move.)\nWhen you conquer, ready me.",
+      "primitives": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesSupported": [
+        "READY_UNIT_SINGLE",
+        "BUFF_PLUS1_PERM",
+        "RETURN_TO_BASE_SINGLE"
+      ],
+      "primitivesMissing": [],
+      "flags": [
+        "TRIGGER_UNSUPPORTED: When a buffed unit you control would die",
+        "REPLACEMENT_EFFECT"
+      ],
+      "targetProfile": {
+        "needsTargets": false,
+        "count": 0,
+        "restriction": "ANY",
+        "location": "ANY",
+        "notes": []
+      },
+      "status": "PARTIAL"
+    }
+  ]
+}

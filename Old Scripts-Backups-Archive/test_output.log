@@ -1,0 +1,28 @@
+
+Running 1 test using 1 worker
+
+recalculateVictoryScore called
+recalculateVictoryScore called
+  ✘  1 tests/cards.spec.ts:578:5 › Card Execution TDD Suite › Aspirant's Climb increases points to win (582ms)
+
+
+  1) tests/cards.spec.ts:578:5 › Card Execution TDD Suite › Aspirant's Climb increases points to win 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m9[39m
+    Received: [31m8[39m
+
+      618 |         }, "Aspirant's Climb");
+      619 |
+    > 620 |         expect(finalScore).toBe(initialScore + 1);
+          |                            ^
+      621 |     });
+      622 | });
+      623 |
+        at /Users/grae/Desktop/Riftbound/RBv PointClick/tests/cards.spec.ts:620:28
+
+    Error Context: test-results/tests-cards-Card-Execution-78453-imb-increases-points-to-win/error-context.md
+
+  1 failed
+    tests/cards.spec.ts:578:5 › Card Execution TDD Suite › Aspirant's Climb increases points to win 

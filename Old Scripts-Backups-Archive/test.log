@@ -1,0 +1,26 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 tests/cards.spec.ts:192:5 › Card Execution TDD Suite › Altar to Unity (21.1s)
+
+
+  1) tests/cards.spec.ts:192:5 › Card Execution TDD Suite › Altar to Unity ─────────────────────────
+
+    Test was interrupted.
+
+    Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+    Call log:
+    [2m  - navigating to "http://127.0.0.1:5173/", waiting until "load"[22m
+
+
+      15 |
+      16 |     test.beforeEach(async ({ page }) => {
+    > 17 |         await page.goto('http://127.0.0.1:5173/');
+         |                    ^
+      18 |         await page.getByText('Quick Start (local data)').click();
+      19 |         await page.waitForFunction(() => !!window.__RB_GAME__);
+      20 |     });
+        at /Users/grae/Desktop/Riftbound/RBv PointClick/tests/cards.spec.ts:17:20
+
+  1 interrupted
+    tests/cards.spec.ts:192:5 › Card Execution TDD Suite › Altar to Unity ──────────────────────────

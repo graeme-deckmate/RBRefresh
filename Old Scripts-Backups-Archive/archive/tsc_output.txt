@@ -1,0 +1,7 @@
+RBEXP.tsx(5866,13): error TS2322: Type 'undefined' is not assignable to type 'ResolveOutcome'.
+RBEXP.tsx(8636,13): error TS2741: Property 'pendingPlayHint' is missing in type '{ step: "MULLIGAN"; turnNumber: number; turnPlayer: PlayerId; startingPlayer: PlayerId; priorityPlayer: PlayerId; passesInRow: number; state: "OPEN"; windowKind: "NONE"; ... 18 more ...; delayedTriggers: never[]; }' but required in type 'GameState'.
+RBEXP.tsx(8889,13): error TS2741: Property 'pendingPlayHint' is missing in type '{ step: "MULLIGAN"; turnNumber: number; turnPlayer: PlayerId; startingPlayer: PlayerId; priorityPlayer: PlayerId; passesInRow: number; state: "OPEN"; windowKind: "NONE"; ... 18 more ...; delayedTriggers: never[]; }' but required in type 'GameState'.
+RBEXP.tsx(9369,62): error TS2345: Argument of type 'TargetRequirement | undefined' is not assignable to parameter of type 'TargetRequirement'.
+  Type 'undefined' is not assignable to type 'TargetRequirement'.
+RBEXP.tsx(18086,19): error TS2322: Type 'CardInstance | RuneInstance | null' is not assignable to type 'CardInstance | null'.
+  Type 'RuneInstance' is missing the following properties from type 'CardInstance': damage, buffs, tempMightBonus, stunned, and 6 more.

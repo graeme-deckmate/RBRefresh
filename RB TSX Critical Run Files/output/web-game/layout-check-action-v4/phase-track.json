@@ -1,0 +1,37 @@
+[
+  {
+    "idx": 0,
+    "text": "Mulligan",
+    "className": "rb-phasePill rb-phasePillDone"
+  },
+  {
+    "idx": 1,
+    "text": "Awaken",
+    "className": "rb-phasePill rb-phasePillDone"
+  },
+  {
+    "idx": 2,
+    "text": "Beginning",
+    "className": "rb-phasePill rb-phasePillDone"
+  },
+  {
+    "idx": 3,
+    "text": "Channel",
+    "className": "rb-phasePill rb-phasePillDone"
+  },
+  {
+    "idx": 4,
+    "text": "Draw",
+    "className": "rb-phasePill rb-phasePillDone"
+  },
+  {
+    "idx": 5,
+    "text": "Action",
+    "className": "rb-phasePill rb-phasePillActiveMyTurn"
+  },
+  {
+    "idx": 6,
+    "text": "End",
+    "className": "rb-phasePill"
+  }
+]
