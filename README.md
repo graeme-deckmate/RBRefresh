@@ -14,14 +14,23 @@ A high-fidelity rules-based emulator for the **Riftbound** card game. Built with
 
 The project has been organized for clarity and ease of development:
 
-- `src/`: Core application source code.
-  - `Logic.tsx`: The heart of the emulator, containing the comprehensive rules engine and game logic.
-  - `App.tsx`: Main entry component.
-  - `main.tsx`: Application bootstrap.
-- `public/`: Static assets and public resources.
-- `Rules/`: Reference documentation for game rules and mechanics.
-- `RB TSX Critical Run Files/`: Original project source (preserved for backup).
-- `riftbound_data_expert.json`: The source-of-truth JSON file containing card data, stats, and ability logic.
+```text
+.
+├── .vscode/                # VS Code workspace settings
+├── public/                 # Static assets (images, icons)
+├── src/                    # Core application source
+│   ├── main.tsx            # Application entry point
+│   ├── App.tsx             # Root component
+│   ├── Logic.tsx           # Rules engine and game logic
+│   └── index.css           # Global styles
+├── Rules/                  # Game rules documentation
+├── RB TSX Critical Run Files/ # Backup of original source files
+├── index.html              # HTML template
+├── package.json            # Dependencies and scripts
+├── tsconfig.json           # TypeScript configuration
+├── vite.config.ts          # Vite build configuration
+└── riftbound_data_expert (1).json # Game data source
+```
 
 ## 🎮 Getting Started
 
